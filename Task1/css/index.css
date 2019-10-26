@@ -1,0 +1,77 @@
+
+
+body
+{
+    /* so that the header hugs the top 
+    - could also set a margin and do the opposite on the header */
+    margin: 0px;
+}
+
+.header
+{
+    /* position is not super needed here, 
+        but if using it, note that fixed could prevent full viewing on small screens */
+    position:absolute;  
+
+    background: rgb(182, 179, 179);
+
+    width: 100%;
+    height: 64px;
+    line-height: 64px; /* to keep content centered vertically */
+
+    /* NOTE: Custom variables (properties) could be used to manage font size/width/etc
+    --custom-header-height: 64px;
+    line-height: var(--custom-header-height, 64px);
+    */    
+}
+
+/* header-container is mainly used to center the content and keep it together.
+    - would be needed if the center was fixed instead of >= 50px */
+.header-container
+{
+    /* use to center the content if the middle space is fixed instead of >= 50px */
+    /* margin: auto; width: 550px; */ 
+
+    /* to maintain min 50px width on smaller screens */
+    min-width: 550px;
+
+    height: 100%;
+
+    color: darkslategray;
+}
+
+.intro-welcome
+{
+    float:left;
+
+    /* could have used margin instead of padding among other options */
+    /* one way to maintain 50+ width */
+    padding: 0px 25px 0px 20px;
+
+    /* should set a fallback just in case Roboto is not available */
+    font-family: 'Roboto', sans-serif;
+
+    /* all of these could have been combined into just 'font' */
+    font-weight: bold; /* could have used number */
+    font-size: 20px;
+}
+
+/* in case want to set separately 
+.intro-username
+{
+}
+*/
+
+.intro-current-time
+{
+    float:right;
+
+    /* one way to maintain 50+ width */
+    padding: 0px 20px 0px 25px;
+
+    /* doing the same here to be consistent - makes for easier maintenance */
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+
+}

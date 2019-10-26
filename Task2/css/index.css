@@ -1,0 +1,15 @@
+
+
+body
+{
+    color: darkslategrey;;
+}
+
+.cities-list
+{
+    background: goldenrod;
+    min-height: 500px;
+    max-height: 800px;
+    overflow-y: auto;
+    
+}
