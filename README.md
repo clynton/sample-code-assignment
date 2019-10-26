@@ -1,4 +1,4 @@
-# sample-code-assessment
+# sample-code-assignment
 
 For legal reasons, I can't post the original assignment, but this repo is my response...
 
